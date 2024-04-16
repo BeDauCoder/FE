@@ -1,0 +1,53 @@
+#container{
+    background-color: gainsboro;
+    width: 640px;
+}
+
+
+#nagivation{
+    display: flex;
+    flex-direction: row;
+    background-color: pink;
+   
+}
+
+.title{
+    width: 100px;
+    text-align: center;
+}
+
+#content{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.img{
+    margin: 10px;
+}
+
+.library{
+    margin: 10px;
+    width: 200px;
+}
+
+.list{
+    margin: 10px;
+    width: 200px;
+}
+
+.item{
+    width: 80px;
+    height: 400;
+}
+
+#bottom {
+    background-color: aqua;
+    margin-left: 10px;
+    width: 610px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+

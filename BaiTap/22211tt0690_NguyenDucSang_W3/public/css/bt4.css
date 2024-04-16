@@ -1,0 +1,40 @@
+#row{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.item{
+    background-color: red;
+    height: 400px;
+    width: 200px;
+    margin: 3px;
+    border-radius: 3px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.qc{
+    width: 80px;
+    background-color: yellow;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.samFan{
+    width: 180px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.nameProduct{
+    margin-left: 10px;
+}
+
+.sale{
+    position: absolute;
+    width: 100px;
+    background-color: yellow;
+    margin-left: 50px;
+
+}

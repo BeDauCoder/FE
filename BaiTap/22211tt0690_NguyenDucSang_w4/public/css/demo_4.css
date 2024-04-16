@@ -1,0 +1,7 @@
+tr:hover > td {
+  background-color: #D1D119;
+}
+
+tr:hover > th {
+    background-color: lightcoral;
+  }

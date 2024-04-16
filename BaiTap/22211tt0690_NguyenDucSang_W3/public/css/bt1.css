@@ -1,0 +1,13 @@
+#header{
+    background-image: linear-gradient(to right,lightgreen,yellow,lightblue);
+}
+
+.content{
+    color: gray;
+    box-shadow: 0 2px red;
+    width: 100px;
+}
+
+.title{
+    color: greenyellow;
+}

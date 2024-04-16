@@ -1,0 +1,68 @@
+section{
+    background-color: rgb(53, 82, 212);
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+p{
+    color: rgb(3, 3, 3);
+    text-align: center;
+    color: white;
+}
+
+#caption{
+    background-image:url("../img/poster-mai-scaled-1708403724.jpg") ;
+    background-repeat: no-repeat;
+    margin-left: 200px;
+    height: 200px;
+    width: 200px;
+}
+
+
+.dotted{
+    border: 2px black;
+    border-style: dotted;
+}
+
+.dashed{
+    border: 2px black;
+    border-style: dashed;
+}
+.solid{
+    border: 2px black;
+    border-style: solid;
+}
+.double{
+    border: 2px black;
+    border-style: double;
+}
+.groove{
+    border: 2px black;
+    border-style: groove;
+}
+.ridge{
+    border: 2px black;
+    border-style: ridge;
+}
+.inset{
+    border: 2px black;
+    border-style: inset;
+}
+.outset{
+    border: 2px black;
+    border-style: outset;
+}
+.none{
+    border: 2px black;
+    border-style: none;
+}
+.hidden{
+    border: 2px black;
+    border-style: hidden;
+}
+.mix{
+    border: 2px black;
+    
+}
