@@ -1,0 +1,45 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightcoral;
+}
+#calcultor{
+    margin-top: 10px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: lightgreen;
+}
+#keyboard{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+#operator_match{
+    height: 30px;
+    margin-right: 5px;
+}
+
+#result{
+    margin-right: 5px;
+}
+#television{
+    width: 400px;
+}
+
+.btn_numbers{
+    background-color: lightskyblue;
+    border-radius: 5px;
+}
+
+.btn_numbers:hover{
+    background-color: lightgoldenrodyellow;
+}
+#BeDau{
+    background-color: lightgreen;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    margin-top: 10px;
+}
