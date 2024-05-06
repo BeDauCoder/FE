@@ -1,0 +1,14 @@
+#btn_random{
+    background-color: lightcoral;
+}
+
+#btn_random:hover{
+    background-color: lightgreen;
+}
+
+.controll{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
