@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#bg-game {
+    height: 600px;
+    width: 1200px;
+    padding: 10px;
+    position: relative;
+}
+
+.section {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hinhtron {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+    border: 1px solid white;
+    box-shadow: 10px -4px 79px -35px rgba(0, 0, 0, 1) inset;
+    -webkit-box-shadow: 10px -4px 79px -35px rgba(0, 0, 0, 1) inset;
+    -moz-box-shadow: 10px -4px 79px -35px rgba(0, 0, 0, 1) inset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    position: absolute;
+    transition: 2s;
+}
+
+.do {
+    background-color: red;
+}
+
+.xanhduong {
+    background-color: blue;
+}
+
+.xanhla {
+    background-color: green;
+}
+
+.cam {
+    background-color: orange;
+}
+
+.den {
+    background-color: black;
+}
+
+.btn {
+    border-radius: 5px;
+    height: 40px;
+    width: 5%;
+    color: black;
+    transition: .2s;
+    background-color: aquamarine;
+    margin: 5px;
+    outline: 0;
+    border: 0;
+}
+
+.btn-start:hover {
+    background-color: rgb(9, 202, 57);
+    color: black;
+    transition: .2s;
+}
+
+.btn-stop:hover {
+    background-color: rgb(219, 18, 18);
+    color: black;
+    transition: .2s;
+}
+
+.btn-stop {
+    display: none;
+}
+
+#score-board {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+#score-board>span[score] {
+    color: black;
+}

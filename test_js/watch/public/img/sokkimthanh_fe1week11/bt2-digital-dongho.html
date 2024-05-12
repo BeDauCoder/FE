@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/all.min.css">
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/clock.css">
+</head>
+
+
+<body>
+    <div class="scene">
+        <div class="cube">
+            <div class="cube__face cube__face--front">
+                <div class="frame">
+                     
+                    <div id="clock">
+                        <h1 class="hour">hh</h1>:
+                        <h1 class="min">mm</h1>:
+                        <h1 class="sec">ss</h1>
+                    </div>
+                    <h6 id="ampm" class="ampm-clock"><span class="fa-1x"><i class="fa fa-circle"></i></span></h6>
+                    <h6 class="title-clock">capello</h6>
+                </div>
+            </div>
+            <div class="cube__face cube__face--back"></div>
+            <div class="cube__face cube__face--right"></div>
+            <div class="cube__face cube__face--left"></div>
+            <div class="cube__face cube__face--top"></div>
+            <div class="cube__face cube__face--bottom"></div>
+        </div>
+    </div>
+
+    <script src="./public/js/all.min.js"></script>
+    <script src="./public/js/bootstrap.bundle.min.js"></script>
+    <script src="./public/baitapjs/clock.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+/**
+* Sok Kim Thanh
+* transform rotate
+* 5/5/2023
+*/
+#chongchong {
+    background: url(../images/eyes.jpg) center center no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img#ringegan {
+    height: 250px;
+    width: 250px;
+    margin-left: 70px;
+}
+
+.btn0 {
+    height: 100px;
+    width: 200px;
+    background-image: linear-gradient(black, white);
+    border-radius: 25px;
+    border: 0;
+    outline: 0;
+    transition: .2s;
+    font-size: 3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: purple;
+}
+
+.btn0:hover {
+    background-image: linear-gradient(white, black);
+    transition: .2s;
+}
+
+#btn_stop {
+    display: none;
+}

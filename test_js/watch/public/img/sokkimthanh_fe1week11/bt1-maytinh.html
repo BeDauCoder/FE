@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./public/css/all.min.css">
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/mystyle.css">
+</head>
+
+
+<body>
+    <div id="mayTinh">
+        <div class="container">
+            <div class="row">
+                <div class="col-ms-12">
+                    <div class="three-dots">
+                        <span class="fa-1x text-white-50"><i class="fa fa-circle"></i></span>
+                        <span class="fa-1x text-white-50"><i class="fa fa-circle"></i></span>
+                        <span class="fa-1x text-white-50"><i class="fa fa-circle"></i></span>
+                    </div>
+                    <div data-expression class="display-4" id="bieuThuc">0</div>
+                    <div data-result class="display-1" id="ketQua">0</div>
+                </div>
+            </div>
+            <div id="keyboards">
+                <button data-clear class="btn0" type="button">Clear</button>
+                <button data-delete class="btn0" type="button">Del</button>
+                <button data-operation class="btn0" type="button">%</button>
+                <button data-operation class="btn0" type="button">/</button>
+                <button data-number class="btn0" type="button">7</button>
+                <button data-number class="btn0" type="button">8</button>
+                <button data-number class="btn0" type="button">9</button>
+                <button data-operation class="btn0" type="button">*</button>
+                <button data-number class="btn0" type="button">4</button>
+                <button data-number class="btn0" type="button">5</button>
+                <button data-number class="btn0" type="button">6</button>
+                <button data-operation class="btn0" type="button">-</button>
+                <button data-number class="btn0" type="button">1</button>
+                <button data-number class="btn0" type="button">2</button>
+                <button data-number class="btn0" type="button">3</button>
+                <button data-operation class="btn0" type="button">+</button>
+                <button data-number class="btn0 left-bottom-conner" type="button">.</button>
+                <button data-number class="btn0" type="button">0</button>
+                <button data-enter class="btn0 two-row right-bottom-conner text-end" type="button">
+                    <p class="me-4">Enter</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./public/js/all.min.js"></script>
+    <script src="./public/js/bootstrap.bundle.min.js"></script>
+    <script src="./public/baitapjs/calculator2.js"></script>
+    
+</body>
+
+</html>

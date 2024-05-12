@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.clock {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: relative;
+    background: url(../images/rinnegan.webp);
+    background-size: cover;
+}
+
+.hand {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hand-dot::after {
+    content: '';
+    background: #000;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: calc(50% - 10px);
+    left: calc(50% - 10px);
+    border-radius: 50%; 
+}
+
+.hand-sec::after {
+    content: '';
+    background: #000;
+    width: 2px;
+    position: absolute;
+    top: 5%;
+    bottom: 40%;
+    left: calc(50% - 1px);
+}
+
+.hand-min::after {
+    content: '';
+    background: #00f;
+    width: 6px;
+    position: absolute;
+    top: 17%;
+    bottom: 40%;
+    left: calc(50% - 3px);
+}
+
+.hand-hour::after {
+    content: '';
+    background: #f00;
+    width: 10px;
+    position: absolute;
+    top: 20%;
+    bottom: 40%;
+    left: calc(50% - 5px);
+}
