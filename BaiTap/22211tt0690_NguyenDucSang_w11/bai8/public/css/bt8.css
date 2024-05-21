@@ -1,0 +1,19 @@
+.large-img {
+    display: block;
+    width: 608px;
+    clear: both;
+}
+
+.small-img {
+    width: 200px;
+    display: inline-block;
+    padding: 2px;
+    margin-top: 10px;
+}
+
+.faded {
+    opacity: 0.75
+}
+.border {
+    border-bottom: 5px solid red;
+}

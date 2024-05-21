@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bai 6</title>
+    <style>
+        .number {
+            width: 50px;
+            line-height: 50px;
+            display: inline-block;
+            border-radius: 25px;
+            position: absolute;
+            text-align: center;
+        }
+
+        .orange {
+            background: orange;
+        }
+
+        .red {
+            background: red;
+        }
+
+        .green {
+            background: green
+        }
+
+        .blue {
+            background: blue;
+            color: white
+        }
+
+        .black {
+            background: black;
+            color: white
+        }
+        .timeout{
+            background: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            position: fixed;
+            line-height: 800px;
+            display: none;
+            text-align: center;
+            color:white;
+            z-index:100;
+        }
+        .time{
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+        }
+        #btn_reset{
+            background-color: lightcoral;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="timeout">
+        <h1 id="score">Score: </h1>
+        <button id="btn_reset">Reset</button>
+    </div>
+
+    <div class="time"><h3 id="number_score">0</h3></div>
+    <button class="start">start</button>
+    <div class="number red">10</div>
+    <div class="number red">10</div>
+    <div class="number blue">5</div>
+    <div class="number blue">5</div>
+    <div class="number green">2</div>
+    <div class="number green">2</div>
+    <div class="number orange">1</div>
+    <div class="number orange">1</div>
+    <div class="number black">0</div>
+    <div class="number black">0</div>
+    <script>
+        const start = document.querySelector('.start');
+        const number_score = document.querySelector('#number_score');
+        const number = document.querySelectorAll('.number');
+        let play;
+        let sc = 0;
+        const score = document.querySelector('#score');
+        const timeOut = document.querySelector('.timeout');
+        let getRndInteger = (min, max) => {
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
+        let changePosition = () => {
+            number.forEach((item) => {
+                item.style.left = getRndInteger(0, 1201) + 'px';
+                item.style.top = getRndInteger(0, 801) + 'px';
+            });
+        }
+        start.onclick = () => {
+            changePosition();
+            play = setInterval(changePosition, 6000);
+            setTimeout(stopGame, 10000);
+        }
+        let stopGame = () => {
+            clearInterval(play);
+            timeOut.style.display = 'block';
+            timeOut.style.display = 'unser'
+            score.append(sc);
+        }
+        number.forEach((item) => {
+            item.onclick = () => {
+               sc += +item.innerHTML;
+               number_score.innerHTML = sc
+            }
+        })
+    </script>
+</body>
+
+</html>

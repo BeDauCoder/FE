@@ -1,0 +1,36 @@
+const number = document.querySelectorAll('.number');
+const start = document.querySelector('.start');
+for (let i = 1; i <= 100; i++) {
+    document.body.insertAdjacentHTML('afterend', '<div class="number">' + i + '</div>')
+}
+
+let sc = 0;
+const score = document.querySelector('#score');
+const timeOut = document.querySelector('.timeout');
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+};
+let changePosition = () => {
+    number.forEach((item) => {
+        item.style.left = getRndInteger(0, 1201) + 'px';
+        item.style.top = getRndInteger(0, 801) + 'px';
+    });
+}
+start.onclick = () => {
+    changePosition();
+    setTimeout(stopGame, 60000);
+}
+let stopGame = () => {
+    timeOut.style.display = 'block';
+    score.append(sc);
+}
+let order = 1;
+number.forEach((item) => {
+    item.onclick = () => {
+        if (item.innerHTML == order) {
+            sc++;
+            item.classList.add('black');
+            order++;
+        }
+    }
+})

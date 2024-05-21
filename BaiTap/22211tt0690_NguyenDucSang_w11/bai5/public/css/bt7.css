@@ -1,0 +1,53 @@
+.number {
+    width: 50px;
+    line-height: 50px;
+    display: inline-block;
+    border-radius: 25px;
+    position: absolute;
+    text-align: center;
+    color:black;
+    border: 1px black solid;
+    background-color: lightseagreen;
+
+}
+.timeout{
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: fixed;
+    line-height: 800px;
+    display: none;
+    text-align: center;
+    color:white;
+   
+}
+.black {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: unset;
+}
+.start{
+    background-color: lightcoral;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+.time{
+    margin-top: 10;
+    background-color: lightcoral;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+body{
+    background-color: lightgoldenrodyellow;
+}
+
+.controller{
+    display: flex;
+    flex-direction: row;
+}

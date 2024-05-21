@@ -1,0 +1,13 @@
+#bgCircel{
+    height: 1000px;
+    width: 1500px;
+    background-color: aqua;
+}
+.circle{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: lightcoral;
+    margin: 10px;
+    float: left;
+}

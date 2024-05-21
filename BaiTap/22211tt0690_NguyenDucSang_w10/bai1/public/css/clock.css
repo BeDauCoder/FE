@@ -1,0 +1,59 @@
+body{
+    background-color: lightseagreen;
+}
+
+#clock_time{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#clock{
+    width: 300px;
+    height: 200px;
+    background-color: lightcoral;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#timeline{
+    display: flex;
+    flex-direction: row;
+}
+
+#txt_BeDau{
+    background-color: lightskyblue;
+    border-radius: 10px;
+}
+
+#controll{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#controll{
+    background-color: lightseagreen;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn{
+    width: 100px;
+    height: 100px;
+    background-color: lightskyblue;
+}
+
+.btn:hover{
+    background-color: lightpink;
+    color: black;
+}
+
+#header{
+    background-color: lightblue;
+    border-radius: 10px;
+}
